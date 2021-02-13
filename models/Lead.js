@@ -1,7 +1,4 @@
 "use strict";
-
-const { Sequelize, DataTypes } = require("sequelize/types");
-
 module.exports = (sequelize, DataTypes) => {
   var Lead = sequelize.define("Lead", {
     id: {
