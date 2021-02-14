@@ -1,0 +1,115 @@
+[33mcommit a8bd397ffd52c9e65f622e3549745a8bee612af8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sun Feb 14 15:36:16 2021 +0500
+
+    Implemented sign up, login and logout routes
+
+[33mcommit 29ebab0d9967e25c34186ca7d2e67eed79495d20[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sun Feb 14 15:11:43 2021 +0500
+
+    Implement passport local auth strategy
+
+[33mcommit b32e595bac698eef70f864af5accffb2e3fbcad4[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sun Feb 14 14:47:13 2021 +0500
+
+    install packages for login and sign up
+
+[33mcommit b29e9f09ae381a75fd8806aeef1cbb2dab435bf8[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sun Feb 14 14:40:39 2021 +0500
+
+    get route for login, signup and setup db models
+
+[33mcommit 480e7f84545142008fad8ff0d7195f6813edfa0b[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sun Feb 14 13:15:46 2021 +0500
+
+    Migrated all pages to bootstrap
+
+[33mcommit 5dd0a597ca81768c2552da032a461971829eb2a2[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sun Feb 14 12:54:28 2021 +0500
+
+    installed bootstrap and update look of pages
+
+[33mcommit af1e1a0ea6f294f43cbd9d847bacc45f1240942d[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sun Feb 14 12:13:00 2021 +0500
+
+    Add a common header, footer section in pug files
+
+[33mcommit bfbb91eccb366046aaceccd364beca17c0059035[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sat Feb 13 20:07:26 2021 +0500
+
+    Implement ajax delete route
+
+[33mcommit 32a446ef948760710a45f1cbbf7e821dc8c7687d[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sat Feb 13 19:11:17 2021 +0500
+
+    Implement delete route for leads
+
+[33mcommit 9104debe5d8725324f1f96491de5b5b281d39c5f[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sat Feb 13 19:05:27 2021 +0500
+
+    Add lead show edit and post routes
+
+[33mcommit 7afc0631eeb6f5897109ec94cc00432d619c22d5[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sat Feb 13 18:05:37 2021 +0500
+
+    Add a new route to display lead details
+
+[33mcommit 0158eaaac799148162748a92e6a0ca73ca1811a6[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sat Feb 13 17:58:17 2021 +0500
+
+    Implement /leads routes
+    
+    which shows a collection of leads upon submission
+
+[33mcommit 74f9a7c7bc94e8f86b2f116e0f8bbb189e8feb49[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sat Feb 13 17:42:01 2021 +0500
+
+    Save leads and testing
+
+[33mcommit 32dad8aaff018f32b1749b8ea9d9134a7a679742[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Sat Feb 13 17:33:09 2021 +0500
+
+    create migrations, models for Leads table.
+
+[33mcommit de079043164ddb03cc461503c0b0dea8afbb165b[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Fri Feb 12 18:05:52 2021 +0500
+
+    Add Sequelize and packages
+
+[33mcommit 6c67e2247ff7a99e127d4fae4493dcfd686c7942[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Fri Feb 12 17:26:10 2021 +0500
+
+    landing page email submit
+
+[33mcommit 06b484b2466aa89495f3e00f5ec08d45f095c780[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Fri Feb 12 17:20:25 2021 +0500
+
+    landing page first form
+
+[33mcommit 073c35d9e5d4442096e16357360df71df4239c84[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Fri Feb 12 17:12:48 2021 +0500
+
+    Installed nodemon
+
+[33mcommit bd1be72c15b5315688da8a71043f22cbb64a1e7d[m
+Author: ZeroSiks <100alialiraishali@gmail.com>
+Date:   Fri Feb 12 16:58:53 2021 +0500
+
+    Initial commit
