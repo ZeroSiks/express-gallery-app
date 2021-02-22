@@ -1,8 +1,15 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* background-color: #282c34; */
+  background-color: #121212;
+  /* color: #dddddd; */
+  color: #99aab5;
 }
 
-a {
-  color: #00B7FF;
+.epiccolor {
+  background-color: #181a1b;
+}
+
+.navbar-light {
+  /* background-color: #ed4c5c; #bfa575*/
+  background-color: #23272a;
 }
