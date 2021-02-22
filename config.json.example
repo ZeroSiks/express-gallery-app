@@ -1,0 +1,6 @@
+{
+  "searchFolder": "path where input files are located",
+  "destinationFolder": "path where all the images are to be stored",
+  "notFoundFolder": "full folder path where images that couldnt be found are placed",
+  "sagiriKey": "saucenao api key"
+}
