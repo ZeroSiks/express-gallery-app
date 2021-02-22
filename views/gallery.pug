@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  include common/head.pug
+  +head("Gallery")
+  body
+    header
+      include common/navbar.pug
+      +navbar(user)
+      .container.mu-2
+        .row.align-items-center
+          .col
+            h1.mb-3.pt-2 Testing Image Gallery
+            p.lead Huge work in progress image gallery.
+            p.lead.mb-4 Database implemented!!
+
+            if user && user.is_admin == true
+              form(action="/gallery", method="POST")
+                .input-group-append
+                  button(type="submit").btn.btn-primary Upload 
+
+            .row
+              if images[0].dataValues
+                for image in images
+                  .col-4.col-sm-4.col-lg-2
+                    a(href="/gallery/" + image.dataValues.danbooru_id)
+                      img(src=`/images/gallery/thumbs/thumb_${image.dataValues.image_name}`).w-100.py-1
+              else 
+                p no images    
+    include common/footer.pug
+    +footer()
+    
+    //- .col-md-6.order-md-1.text-center.text-md-left.pr-md-5

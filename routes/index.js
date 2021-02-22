@@ -3,6 +3,7 @@ var router = express.Router();
 
 let landing = require("../controllers/landing");
 let user = require("../controllers/user");
+let gallery = require("../controllers/gallery");
 
 let { isLoggedIn, hasAuth } = require("../middleware/hasAuth");
 
@@ -13,6 +14,13 @@ router.post("/signup", user.signup);
 router.post("/logout", user.logout);
 router.get("/logout", user.logout);
 /* GET home page. */
+
+router.post("/gallery", gallery.submit_image);
+router.get("/gallery/", gallery.show_images);
+router.get("/fullhd", gallery.get_full_images);
+router.get("/gallery/:image_id", gallery.show_image);
+router.post("/gallery/:image_id/delete_image", hasAuth, gallery.delete_image);
+
 router.get("/", landing.get_landing);
 router.post("/", landing.submit_lead);
 router.get("/leads", hasAuth, landing.show_leads);
