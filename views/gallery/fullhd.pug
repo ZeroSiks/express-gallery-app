@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  include ../common/head.pug
+  +head("Gallery")
+  body
+    header
+      include ../common/navbar.pug
+      +navbar(user)
+      .container.mu-2
+        .row.align-items-center
+          .col
+            h1.mb-3.pt-2 Testing Image Gallery
+            p.lead Huge work in progress image gallery.
+            p.lead.mb-4 Need to implement database for metadata.
+
+            .row
+              for image in images
+                .col-4.col-sm-4.col-lg-2
+                  a(href="/gallery/" + image.data.danbooru_id)
+                    img(src="/images/gallery/" + image.data.image_name).w-100.py-1
+                  
+    include ../common/footer.pug
+    +footer()
+    
+    //- .col-md-6.order-md-1.text-center.text-md-left.pr-md-5

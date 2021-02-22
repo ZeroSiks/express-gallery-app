@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  include ../common/head.pug
+  +head("Gallery")
+  body
+    header
+      include ../common/navbar.pug
+      +navbar(user)
+      .container.mu-2.epiccolor
+        .row.align-items-center
+          .col
+            p
+            h1.mb-3.pt-2.text-center Bermuda Image Gallery
+            //- for character in image.characters
+            each characters, material in {image}
+              - var character = image.characters.join(", ").replace(/[_]/g, " ");
+              - var material = image.material.join(", ").replace(/[_]/g, " ");
+              p.lead.mb-4 #[strong Character: ]
+                =character
+              p.lead.mb-4 #[strong Material: ]
+                =material
+            p.lead.mb-4 #[strong Artist: ]
+              =image.artist
+
+            .row
+                .col-12.col-lg-6.mx-auto
+                  a(href="/images/gallery/images/" + image.image_name)
+                    img(src="/images/gallery/images/" + image.image_name).w-100.py-1
+
+            p 
+            each tag_general in {image}
+              - var tags = image.tag_general.join(", ")
+              p.lead.mb-4 #[strong Tags: ]
+                =tags
+            p.lead.mb-4
+              a(href=image.source).text-muted Source
+
+            if user && user.is_admin == true
+              form(action="/gallery/" + image.danbooru_id + "/delete_image", method="POST")
+                button(type="submit" onClick="return confirm('Are you sure you want to delete this?')").btn.btn-danger.float-right Delete
+              |
+              button(type="submit" onClick="return confirm('lol gay?')").btn.btn-primary.float-right Edit
+              
+    include ../common/footer.pug
+    +footer()
+    
+    //- .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
